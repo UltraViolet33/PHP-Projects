@@ -37,7 +37,7 @@ if (isset($_GET['date'])) {
         <h1>Timestamp Microservice</h1>
     </header>
     <main>
-        <div>
+        <div id="content">
             <p>You can put a date in the URL like this : https://timestamp-microservice.test/?date=your_date </p>
             <p>With the timestamp format or the date format : dd-mm-yyyy</p>
             <?php foreach ($data as $indice => $el) : ?>
