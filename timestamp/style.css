@@ -5,8 +5,7 @@ body {
   flex-direction: column;
 }
 
-header,
-footer {
+header {
   min-height: 50px;
   display: flex;
   align-items: center;

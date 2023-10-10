@@ -45,9 +45,6 @@ if (isset($_GET['date'])) {
             <?php endforeach; ?>
         </div>
     </main>
-    <footer>
-        By Ulysse Valdenaire, see the code on my Github
-    </footer>
 </body>
 
 </html>
