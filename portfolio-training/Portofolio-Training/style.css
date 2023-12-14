@@ -1,0 +1,483 @@
+/*************************************** GENERAL ***************************************/
+
+body {
+  margin: 3% 0 3% 0;
+  padding: 0;
+  background-color: #f3e8e5;
+  font-family: "Lato", sans-serif;
+  color: #636884;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+section {
+  width: 80vw;
+  margin: 40px auto;
+}
+
+h3 {
+  text-decoration: underline;
+  margin-top: 20px;
+}
+
+p {
+  text-align: justify;
+  line-height: 25px;
+}
+
+/*************************************** HEADER NAV ***************************************/
+
+ul#menu-topo {
+  margin: 0 auto;
+  padding: 10px 0;
+  list-style-type: none;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgb(43, 43, 141);
+  width: 100%;
+  top: 0;
+}
+
+ul#menu-topo li {
+  display: inline;
+  margin: 0;
+}
+
+.hover:hover {
+  background: #b9dfff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+ul#menu-topo li a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 4px 10px;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li,
+ul li {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  color: rgb(240, 238, 238);
+}
+
+.nav-toggle {
+  display: none;
+}
+
+/**************** SECTION TITLE ****************/
+
+.title {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.name {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+/*************************************** RESPONSIVE DESIGN GENERAL ***************************************/
+@media screen and (max-width: 900px) {
+  body {
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav-menu {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    background: rgb(43, 43, 141);
+    table-layout: fixed;
+    top: 0;
+  }
+
+  ul#menu-topo {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgb(43, 43, 141);
+    table-layout: fixed;
+    transition: all 0.3s ease-in;
+    position: static;
+  }
+
+  ul#menu-topo li {
+    display: block;
+    border-bottom: 1px solid#f3e8e5;
+    line-height: 3;
+    color: white;
+  }
+
+  #menu-topo li a {
+    color: white;
+  }
+
+  ul#menu-topo li.hide {
+    display: none !important;
+  }
+
+  #menu-topo li:hover {
+    border-bottom: 1px solid #c77336;
+    background: #b9dfff;
+  }
+
+  .nav-toggle-label:before {
+    color: white;
+    content: "☰";
+  }
+
+  .nav-toggle:checked + ul#menu-topo {
+    display: table;
+    margin-left: 0;
+  }
+
+  .title {
+    margin-top: 50px;
+  }
+}
+
+/*************************************** SECTION PROFIL ***************************************/
+
+.logo {
+  height: 150px;
+}
+
+.link {
+  font-size: 25px;
+  color: #636884;
+  cursor: pointer;
+  transition-duration: 1000ms;
+}
+
+.link:hover {
+  transform: scale(1.3);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+}
+
+.imgGithub {
+  display: block;
+  margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .flex {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+  }
+}
+
+/*************************************** SECTION FORMATIONS EXPERIENCES ***************************************/
+
+.flex_experiences {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bloc {
+  width: 100%;
+}
+
+/*************************************** SECTION PROJETS ***************************************/
+
+.divProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects {
+  margin: 10px 10px;
+  width: 45%;
+}
+
+/*************************************** SECTION COMPETENCES ***************************************/
+
+.flex_competences {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/************* SECTION LANGAGES INFORMATIQUES ****************/
+
+.flex_langages {
+  display: flex;
+  margin: auto;
+}
+
+.listCode {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listCode li {
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  /* height: 35px; */
+  padding-left: 40px;
+}
+
+.elementPhp {
+  background-image: url("images/php.png");
+}
+
+.elementPython {
+  background-image: url("images/python.png");
+}
+
+.elementJS {
+  background-image: url("images/js.png");
+}
+
+/* .elementHTML {
+  background-image: url("images/html.png");
+  
+} */
+
+.align-self-center {
+  align-self: center;
+}
+
+.listQualités,
+.listQualités li {
+  text-align: center;
+  list-style-type: none;
+}
+
+.listQualités ul {
+  padding: 0;
+}
+
+/************* PIE CHART ****************/
+
+.flex-langages {
+  display: flex;
+  width: 200px;
+
+  justify-content: space-around;
+}
+
+/* @property --p {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 1;
+} */
+
+.pie {
+  --p: 20;
+  --b: 22px;
+  --c: darkred;
+  --w: 60px;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  margin: 5px;
+  place-content: center;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.pie:before,
+.pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.pie:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b)
+      var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+}
+.pie:after {
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  transform: rotate(calc(var(--p) * 3.6deg))
+    translateY(calc(50% - var(--w) / 2));
+}
+.animate {
+  animation: p 1s 0.5s both;
+}
+.no-round:before {
+  background-size: 0 0, auto;
+}
+.no-round:after {
+  content: none;
+}
+@keyframes p {
+  from {
+    --p: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .projects {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+  }
+
+  .flex_experiences,
+  .flex_competences {
+    display: block;
+  }
+
+  .flex_competences div ul {
+    width: 70%;
+    margin: auto;
+  }
+
+  .listProgress li {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 15px;
+    height: 35px;
+  }
+
+  .listProgress li div {
+    margin-left: 100px;
+  }
+}
+
+/*************************************** SECTION FORMULAIRE ***************************************/
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.submitBtn {
+  background: #b9dfff;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow: none;
+  height: 40px;
+  width: 100px;
+}
+
+.submitBtn:hover {
+  background: rgb(43, 43, 141);
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow: none;
+}
+
+.resetBtn:hover {
+  background-color: red;
+}
+
+.center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center img {
+  margin: 10px 50px;
+  width: 30%;
+}
+
+.textCopyright {
+  text-align: center;
+  margin: 0;
+}
+
+input,
+textarea {
+  display: block;
+  width: 70%;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  font-family: "Lato", sans-serif;
+}
+
+input {
+  height: 30px;
+}
+
+input:focus {
+  border: none;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+button {
+  margin: auto;
+}
+
+footer {
+  background: rgb(43, 43, 141);
+  color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  input,
+  textarea {
+    width: 90%;
+  }
+
+  .flex-center img {
+    width: 30%;
+  }
+
+  .submitBtn {
+    background-color: #016abc;
+  }
+}

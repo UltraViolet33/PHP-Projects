@@ -1,0 +1,1 @@
+## This is the portofolio I made in september/october 2021 at the CCI during the web developer training
